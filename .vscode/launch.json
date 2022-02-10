@@ -1,0 +1,28 @@
+{
+    "configurations": [
+        {
+            "name": "Cloud Run: Run/Debug Locally",
+            "type": "cloudcode.cloudrun",
+            "request": "launch",
+            "build": {
+                "docker": {
+                    "path": "target/docker/cloud_run_ballerina/Dockerfile"
+                }
+            },
+            "image": "cloud-run-ballerina",
+            "service": {
+                "name": "cloud-run-ballerina",
+                "containerPort": 8080,
+                "resources": {
+                    "limits": {
+                        "memory": "256Mi"
+                    }
+                }
+            },
+            "target": {
+                "minikube": {}
+            },
+            "watch": true
+        }
+    ]
+}

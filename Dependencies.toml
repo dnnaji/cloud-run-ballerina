@@ -31,6 +31,14 @@ dependencies = [
 
 [[package]]
 org = "ballerina"
+name = "cloud"
+version = "2.1.0"
+modules = [
+	{org = "ballerina", packageName = "cloud", moduleName = "cloud"}
+]
+
+[[package]]
+org = "ballerina"
 name = "crypto"
 version = "2.2.0"
 dependencies = [
@@ -271,6 +279,7 @@ org = "der"
 name = "cloud_run_ballerina"
 version = "0.1.0"
 dependencies = [
+	{org = "ballerina", name = "cloud"},
 	{org = "ballerina", name = "http"},
 	{org = "ballerinai", name = "observe"}
 ]
