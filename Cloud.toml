@@ -4,4 +4,4 @@
  tag="v0.1.0"
 
  [settings]
- buildImage=false # you can make this false if you don't want to build the image and you just need the Dockerfile
+ buildImage=true # you can make this false if you don't want to build the image and you just need the Dockerfile

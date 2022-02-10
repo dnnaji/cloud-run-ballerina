@@ -1,6 +1,3 @@
-[package]
-distribution = "slbeta6"
-
 [build-options]
 observabilityIncluded = true
 cloud = "docker"
